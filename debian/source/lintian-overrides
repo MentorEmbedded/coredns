@@ -1,0 +1,8 @@
+# lintian isn't able to recognize the go build sources properly.
+empty-upstream-sources
+# this is the correct changelog version format for Sokol Linux
+malformed-debian-changelog-version 1.10.1+mel1 (for non-native)
+# These three are intentional
+unsupported-source-format 3.0 (git)
+debian-adds-git-control-dir .git/
+package-depends-on-hardcoded-libc coredns Depends

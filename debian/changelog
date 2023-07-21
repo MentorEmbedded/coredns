@@ -1,0 +1,6 @@
+coredns (1.10.1+mel1) UNRELEASED; urgency=medium
+
+  * local package.
+  * package local-coredns for Sokol Linux
+
+ -- Joe MacDonald <joe.macdonald@siemens.com>  Fri, 21 Jul 2023 11:54:45 -0400

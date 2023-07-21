@@ -1,0 +1,26 @@
+Source: coredns
+Section: net
+Priority: optional
+Maintainer: Mentor Embedded <embedded_support@mentor.com>
+Build-Depends: debhelper (>= 11), chrpath, cpio, curl, diffstat, docker.io | docker-ce, gawk, libseccomp-dev, lz4, pkg-config, wget, zstd, git
+Standards-Version: 4.5.1
+Homepage: https://github.com/rancher/local-path-provisioner
+Rules-Requires-Root: no
+
+Package: coredns
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libc6 (>= 2.31)
+Description: DNS server/forwarder
+ CoreDNS is a DNS server/forwarder, written in Go, that chains plugins.
+ Each plugin performs a (DNS) function.
+ .
+ CoreDNS is a Cloud Native Computing Foundation graduated project.
+ .
+ CoreDNS is a fast and flexible DNS server. The key word here is flexible:
+ with CoreDNS you are able to do what you want with your DNS data by
+ utilizing plugins. If some functionality is not provided out of the box
+ you can add it by writing a plugin.
+ .
+ CoreDNS can listen for DNS requests coming in over UDP/TCP (go'old DNS),
+ TLS (RFC 7858), also called DoT, DNS over HTTP/2 - DoH - (RFC 8484) and
+ gRPC (not a standard).
